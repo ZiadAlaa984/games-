@@ -1,0 +1,275 @@
+:root{
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+        --bo-shadow: 0 0 20px #ffdd009c, 0 0 0 2px #ffdf00, 0px 10px 50px rgba(0, 0, 0, .5);
+}
+h1 > img{
+    width: 30px;
+}
+
+body{
+            font-family: "Comfortaa", cursive;
+            min-height: 100%;
+            min-width: 100%;
+            background-color: var(--main-color);
+            color: var(--color-text);
+        }
+.model{
+    min-height: 100vh;
+}
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--seconde-color);
+}
+.content nav .container {
+    position: sticky !important;
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+.content .navbar{
+    padding: 30px 0px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: rgb(38, 103, 201);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+
+body {
+    overflow: hidden;
+    font-family: "Comfortaa",
+        cursive;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: var(--main-color);
+    color: var(--color-text);
+}
+.row  .inner{
+    cursor: pointer;
+    box-shadow: var(--bo-shadow);
+}
+.capture span {
+    background-color: #272729;
+    padding-inline: 0.45em;
+    padding-block: 0.35em;
+    font-size: 0.75em;
+    font-weight: 700;
+
+    border-radius: 0.375rem;
+}
+
+@media screen and (min-width:800px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.loader {
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #272b30;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader:after,
+.loader:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FF3D00;
+    animation: spin 1s linear infinite;
+    transform-origin: 0px 100%;
+}
+
+.loader:before {
+    transform-origin: 0 50%;
+    background: #fff;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.content main nav {
+    top: 40px;
+    text-transform: capitalize;
+    background-color: rgb(58, 73, 123) !important;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+.content nav .container {
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+    position: sticky !important;
+    background-color: rgb(58, 73, 123) !important;
+}
+.navbar img {
+    width: 50px;
+}
+.button{
+    transition: all .3s;
+}
+.nav-link {
+    font-size: 12px;
+}
+
+.landing img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+.card1 {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+
+}
+.nav-item{
+    transition: all ,4s;
+}
+.card-text{
+
+    width: 100%;
+}
+.inner img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.btn-info {
+    --bs-btn-color: white;
+    font-weight: bolder;
+    --bs-btn-bg: #0dcaf0;
+    --bs-btn-border-color: #0dcaf0;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #31d2f2;
+    --bs-btn-hover-border-color: #25cff2;
+    --bs-btn-focus-shadow-rgb: 11, 172, 204;
+    --bs-btn-active-color: #white;
+    --bs-btn-active-bg: #3dd5f3;
+    --bs-btn-active-border-color: #25cff2;
+    --bs-btn-disabled-bg: #0dcaf0;
+    --bs-btn-disabled-border-color: #0dcaf0;
+}
+.btn-info:hover{
+color: white !important;
+}
+.content .nav-link {
+        text-align: center;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 14px;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.active1{
+    color: #0dcaf0 !important;
+}
+
+/* !   model */
+.model {
+    background-color: #272729be;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+}
+
+.info {
+    padding: 5px;
+    font-size: 12px;
+    color: #000 !important;
+    background-color: RGBA(13, 202, 240) !important;
+    border-radius: 10px;
+}
+
+.tall {
+    font-size: .875em;
+    font-weight: bold;
+}
+
+.model .navbar-brand {
+    font-size: 40px;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-outline-warning {
+    --bs-btn-color: #ffc107;
+    --bs-btn-border-color: #ffc107;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #ffc107;
+    --bs-btn-hover-border-color: #ffc107;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #ffc107;
+    --bs-btn-active-border-color: #ffc107;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ffc107;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ffc107;
+    --bs-gradient: none;
+}
